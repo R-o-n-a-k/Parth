@@ -13,7 +13,13 @@ export default function NavTabs() {
           <Link href="/about">About</Link>
         </li>
         <li>
+          <Link href="/career">Career</Link>
+        </li>
+        <li>
           <Link href="/projects">Projects</Link>
+        </li>
+        <li>
+          <Link href="/achievements">Achievements</Link>
         </li>
         <li>
           <Link href="/contact">Contact</Link>
