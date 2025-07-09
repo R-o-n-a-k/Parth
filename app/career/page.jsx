@@ -1,10 +1,12 @@
 import React from "react";
+import Timeline from "../components/Timeline";
+import { educationData, workData } from "../components/Data";
 
 const career = () => {
   return (
-    <section>
-      <h1 className="text-3xl font-bold mb-2">Career</h1>
-      <p className="text-subtext">Work in Infosys & BSC Computer Science...</p>
+    <section className="section">
+      <Timeline data={workData} heading="Work Experience" />
+      <Timeline data={educationData} heading="Education" />
     </section>
   );
 };

@@ -1,19 +1,19 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f2f2f2;
+  --background: #fafafa;
   --text: #171717;
   --sub-text: #6b7280;
-  /* --sub-text: #A0A0A0; */
   --primary: #A0A0A0;
-  --accent: #b57edc;
-  --accent-hover: #a670d2;
+  /* --accent: #b57edc; */
+  /* --accent-hover: #a670d2; */
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
 }
+
 
 /* @media (prefers-color-scheme: dark) {
   :root {
@@ -25,7 +25,18 @@
   }
 } */
 
+
 body {
   background: var(--background);
   color: var(--text);
+}
+
+@layer components {
+  .section {
+    @apply h-full p-4 md:p-6 mb-10;
+  }
+
+  .section-heading {
+    @apply tracking-wider text-2xl font-bold text-[var(--text)] mb-2;
+  }
 }
