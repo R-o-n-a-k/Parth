@@ -22,8 +22,10 @@ const Counter = ({ end, label, duration = 2000 }) => {
 
   return (
     <div className="flex flex-col items-center">
-      <span className="text-4xl font-bold text-purple-400">{count}+</span>
-      <span className="text-sm font-medium italic text-[var(--text)] mt-1">
+      <span className="md:text-4xl text-2xl font-bold text-accent">
+        {count}+
+      </span>
+      <span className="text-sm font-medium italic text-grey-3 mt-1">
         {label}
       </span>
     </div>

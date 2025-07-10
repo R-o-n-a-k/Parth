@@ -1,5 +1,5 @@
 import React from "react";
-import Skills from "../components/Skills";
+// import Skills from "../components/Skills";
 import Counter from "../components/Counter";
 
 const About = () => {
@@ -8,12 +8,12 @@ const About = () => {
       <section className="section">
         <div className="about-me">
           <h1 className="section-heading">About Me</h1>
-          <p className="text-gray-700 w-full text-justify md:text-lg">
+          <p className="text-content w-full text-justify text-base md:text-lg">
             👋 Hi, I’m a passionate Android Developer with over 7 years of
             experience building high-quality, scalable mobile applications
             across phones, tablets, and TV platforms.
           </p>
-          <p className="text-gray-700 w-full text-justify md:text-lg mt-4">
+          <p className="text-content w-full text-justify text-base md:text-lg mt-4">
             I specialize in Kotlin, MVVM, Jetpack Compose, and Coroutines, with
             20+ published apps and a consistent 99-100% crash-free rate. I've
             led key contributions to Google TV, mentored teams, and earned

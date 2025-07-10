@@ -17,13 +17,13 @@ const SocialMedia = () => {
 
   return (
     <>
-      <div className="flex flex-row gap-6 md:text-2xl absolute md:top-24 top-18 right-6 text-[var(--sub-text)] ">
+      <div className="flex flex-row gap-6 md:text-2xl text-xl absolute md:top-24 top-18 right-6 text-subtitle-color">
         {socialMediaIcons.map((item, index) => (
           <a
             key={index}
             target="_blank"
             href={item.link}
-            className="hover:text-purple-400"
+            className="hover:text-accent"
           >
             {item.icon}
           </a>
