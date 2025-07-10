@@ -3,11 +3,11 @@ const Timeline = ({ data, heading = "Timeline" }) => {
     <>
       <h1 className="section-heading">{heading}</h1>
 
-      <div className="py-2 px-6">
-        <ol className="relative border-l border-gray-300 w-fit ">
+      <div className="py-2 pl-4 md:px-6">
+        <ol className="relative border-l border-grey-2 w-fit ">
           {data.map((item, index) => (
-            <li key={index} className="mb-10 ml-8">
-              <span className="absolute flex items-center justify-center w-8 h-8 md:w-10 md:h-10 bg-accent rounded-full -left-4 md:-left-5 ring-4 ring-white text-white">
+            <li key={index} className="mb-10  ml-6 md:ml-8">
+              <span className="absolute flex items-center justify-center w-8 h-8 md:w-10 md:h-10 bg-accent rounded-full -left-4 md:-left-5 ring-4 ring-background text-white">
                 {item.icon}
               </span>
 
@@ -15,19 +15,16 @@ const Timeline = ({ data, heading = "Timeline" }) => {
                 {item.date}
               </time>
 
-              {/* Title & Company */}
               <h3 className="md:text-lg text-base font-medium text-title-color">
                 {item.title} @ {item.company}
               </h3>
 
-              {/* Location */}
               <p className="text-xs md:text-sm text-grey-4 mb-2">
                 {item.location}
               </p>
 
-              {/* Description */}
               {Array.isArray(item.description) ? (
-                <ul className="list-none space-y-0.5 text-sm md:text-base text-content pl-4 relative">
+                <ul className="list-none space-y-1.5 md:space-y-1.5 w-full text-justify text-sm md:text-base text-content pl-4 relative">
                   {item.description.map((point, i) => (
                     <li
                       key={i}
@@ -38,7 +35,7 @@ const Timeline = ({ data, heading = "Timeline" }) => {
                   ))}
                 </ul>
               ) : (
-                <p className="space-y-0.5 text-sm md:text-base text-content pl-4 relative">
+                <p className="space-y-0.5 w-full text-justify text-sm md:text-base text-content pl-4 relative">
                   {item.description}
                 </p>
               )}
