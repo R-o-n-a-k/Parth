@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${inter.variable} antialiased`}
       >
-        <div className="w-full md:w-[60%] mx-auto">
+        <div className="w-full md:w-[60%] mx-auto bg-background">
         <Header/>
         <NavTabs/>
         {children}

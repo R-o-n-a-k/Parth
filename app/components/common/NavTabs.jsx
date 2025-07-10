@@ -18,7 +18,7 @@ export default function NavTabs() {
 
   return (
     <nav>
-      <ul className="w-full flex items-center justify-around text-xl md:text-2xl text-neutral-400 bg-neutral-200">
+      <ul className="w-full flex items-center justify-around text-xl md:text-2xl bg-grey-1 text-grey-3">
         {navTabData.map((item, index) => {
           const isActive = pathname === item.path;
 
@@ -26,12 +26,8 @@ export default function NavTabs() {
             <li key={index} className="w-full flex justify-center">
               <Link
                 href={item.path}
-                className={`w-full flex justify-center items-center px-2 py-4 hover:bg-neutral-300 hover:shadow-inner
-                  ${
-                    isActive
-                      ? "bg-neutral-300 text-purple-400 shadow-inner"
-                      : ""
-                  }
+                className={`w-full flex justify-center items-center px-2 py-4 hover:bg-grey-2 hover:shadow-inner
+                  ${isActive ? "bg-grey-2 text-accent shadow-inner" : ""}
                 `}
               >
                 {item.icon}
