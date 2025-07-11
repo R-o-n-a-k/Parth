@@ -1,5 +1,78 @@
-import { FaBriefcase, FaGraduationCap } from "react-icons/fa";
+import {
+  FaBriefcase,
+  FaGraduationCap,
+  FaInstagram,
+  FaLinkedin,
+  FaGithub,
+} from "react-icons/fa";
 
+// ----------------------------------------------Header Data---------------------------------------------------
+export const introduction = {
+  name: "Parth Pala",
+  designation: "Technology Analyst | Android Specialist",
+  location: "Mumbai, India",
+};
+
+export const socialMediaIcons = [
+  {
+    link: "https://www.instagram.com/",
+    icon: <FaInstagram />,
+  },
+  {
+    link: "https://www.linkedin.com/in/parth-pala/",
+    icon: <FaLinkedin />,
+  },
+  { link: "https://github.com/parthpala", icon: <FaGithub /> },
+];
+
+// ----------------------------------------------About Data---------------------------------------------------
+export const aboutData = {
+  firstPara:
+    "👋 Hi, I’m a passionate Android Developer with over 7 years of experience building high-quality, scalable mobile applications across phones, tablets, and TV platforms.",
+  secondPara:
+    "I specialize in java, MVVM, Jetpack Compose, and Coroutines, with 20+ published apps and a consistent 99-100% crash-free rate. I've led key contributions to Google TV, mentored teams, and earned multiple Employee of the Quarter awards. I'm driven by clean architecture, performance optimization, and delivering seamless user experiences. Currently, I'm open to new opportunities in Android development.",
+  experience: 7,
+  appsDelivered: 20,
+  issuesResolved: 200,
+};
+
+// data/skills.js
+
+export const skills = {
+  "Languages & Frameworks": ["Kotlin", "Java", "XML", "Android SDK"],
+  "Architecture & Patterns": [
+    "MVVM",
+    "MVP",
+    "Coroutines",
+    "LiveData",
+    "Dependency Injection",
+    "Data Binding",
+    "Clean Architecture",
+  ],
+  Testing: ["Espresso", "JUnit", "Mockito"],
+  "Tools & Platforms": [
+    "Android Studio",
+    "Firebase",
+    "Retrofit",
+    "Room Database",
+  ],
+  "Libraries & SDKs": [
+    "Google APIs (Crashlytics, Maps, Push)",
+    "Facebook SDK",
+    "YouTube SDK",
+    "ZXing (Barcode)",
+    "Glide/Picasso",
+  ],
+  Security: ["OWASP", "App-level encryption & decryption", "HTTPS", "ProGuard"],
+  Other: [
+    "Deep Linking",
+    "Localization",
+    "QR/Barcode integration",
+    "Accessibility (TalkBack)",
+  ],
+};
+
+// ----------------------------------------------Career Data---------------------------------------------------
 export const workData = [
   {
     title: "Technology Analyst",
@@ -53,3 +126,9 @@ export const educationData = [
       "Studied core CS subjects, completed Android internships, and participated in app hackathons.",
   },
 ];
+
+// ----------------------------------------------Project Data---------------------------------------------------
+
+// ----------------------------------------------Achievements Data---------------------------------------------------
+
+// ----------------------------------------------Contact Data---------------------------------------------------
