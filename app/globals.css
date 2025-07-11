@@ -6,7 +6,8 @@
 
 @theme {
   --color-background: #fafafa;
-  --color-accent: #c084fc;
+  /* --color-accent: #c084fc; */
+  --color-accent: #9B5DE5;
   --color-accent-hover: #9333ea;
   --color-title-color: #171717;
   --color-subtitle-color: #6b7280;

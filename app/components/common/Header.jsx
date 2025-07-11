@@ -1,6 +1,7 @@
 import React from "react";
 import SocialMedia from "./SocialMedia";
 import { IoMdDownload } from "react-icons/io";
+import { introduction } from "../Data";
 
 const Header = () => {
   return (
@@ -20,13 +21,13 @@ const Header = () => {
 
           <div className="p-4 md:p-6 mb-10">
             <h1 className="tracking-wider leading-relaxed mt-1 text-2xl md:text-3xl font-bold text-title-color">
-              Parth Pala
+              {introduction.name}
             </h1>
             <p className="text-subtitle-color leading-relaxed font-semibold text-base md:text-lg">
-              Technology Analyst | Android Specialist
+              {introduction.designation}
             </p>
             <p className="italic text-sm md:text-base text-subtitle-color">
-              Mumbai, India
+              {introduction.location}
             </p>
             <a
               href="/ParthPala_Resume.pdf"
