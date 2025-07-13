@@ -12,7 +12,6 @@ export default function NavTabs() {
     { icon: <FaUser />, path: "/about" },
     { icon: <FaBriefcase />, path: "/career" },
     { icon: <FaFolderOpen />, path: "/projects" },
-    { icon: <PiCertificateFill />, path: "/achievements" },
     { icon: <FaEnvelope />, path: "/contact" },
   ];
 
