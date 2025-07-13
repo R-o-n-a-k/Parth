@@ -1,7 +1,8 @@
 import React from "react";
 import SocialMedia from "./SocialMedia";
-import { IoMdDownload } from "react-icons/io";
+import { FaAngleDoubleDown } from "react-icons/fa";
 import { introduction } from "../Data";
+import ThemeIcon from "./ThemeIcon";
 
 const Header = () => {
   return (
@@ -20,9 +21,12 @@ const Header = () => {
           <SocialMedia />
 
           <div className="p-4 md:p-6 mb-10">
-            <h1 className="tracking-wider leading-relaxed mt-1 text-2xl md:text-3xl font-bold text-title-color">
-              {introduction.name}
-            </h1>
+            <div className="flex items-center gap-2">
+              <h1 className="tracking-wider leading-relaxed mt-1 text-2xl md:text-3xl font-bold text-title-color">
+                {introduction.name}
+              </h1>
+              <ThemeIcon />
+            </div>
             <p className="text-subtitle-color leading-relaxed font-semibold text-base md:text-lg">
               {introduction.designation}
             </p>
@@ -32,9 +36,11 @@ const Header = () => {
             <a
               href="/ParthPala_Resume.pdf"
               download
-              className="inline-flex text-sm md:text-base items-center gap-1 tracking-wider mt-5 px-4 py-2 bg-accent cursor-pointer font-semibold text-white rounded-2xl hover:bg-accent-hover hover:shadow-inner"
+              className="btn-normal mt-5"
+              // className="inline-flex text-sm md:text-base items-center gap-1 tracking-wider mt-5 px-4 py-2 bg-accent cursor-pointer font-semibold text-white rounded-2xl hover:bg-accent-hover hover:shadow-inner"
             >
-              DOWNLOAD CV <IoMdDownload />
+              Download CV
+              <FaAngleDoubleDown className="animate-bounce font-bold" />
             </a>
           </div>
         </div>
