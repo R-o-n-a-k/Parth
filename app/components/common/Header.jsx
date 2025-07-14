@@ -30,7 +30,7 @@ const Header = () => {
             <p className="text-subtitle-color leading-relaxed font-semibold text-base md:text-lg">
               {introduction.designation}
             </p>
-            <p className="italic text-sm md:text-base text-subtitle-color">
+            <p className="italic text-sm md:text-base text-grey-4">
               {introduction.location}
             </p>
             <a
