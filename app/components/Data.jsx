@@ -13,6 +13,7 @@ import project1 from "../../public/project/project1.jpg";
 import project2 from "../../public/project/project2.jpg";
 import project3 from "../../public/project/project3.jpg";
 import project4 from "../../public/project/project4.jpg";
+
 // ----------------------------------------------Header Data---------------------------------------------------
 export const introduction = {
   name: "Parth Pala",
@@ -42,8 +43,6 @@ export const aboutData = {
   appsDelivered: 20,
   issuesResolved: 200,
 };
-
-// data/skills.js
 
 export const skills = {
   "Languages & Frameworks": ["Kotlin", "Java", "XML", "Android SDK"],
@@ -169,8 +168,6 @@ export const projects = [
     link: "https://github.com/parthpala",
   },
 ];
-
-// ----------------------------------------------Achievements Data---------------------------------------------------
 
 // ----------------------------------------------Contact Data---------------------------------------------------
 export const contact = [
