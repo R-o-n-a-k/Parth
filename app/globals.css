@@ -1,12 +1,14 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 
-@theme inline {
-  /* --color-foreground: var(--foreground); */
-}
+/* @theme inline {
+  --color-foreground: var(--foreground);
+} */
 
 /* --color-accent: #c084fc; */
 @theme {
   --color-background: #fafafa;
+  --color-main-bg: #F0F0F0;
   --color-accent: #9B5DE5;
   --color-accent-hover: #9333ea;
   --color-title-color: #171717;
@@ -19,46 +21,29 @@
   --animate-send: sending 1s infinite;
 }
 
-.light {
-  --color-background: #fafafa;
-  --color-accent: #9B5DE5;
-  --color-accent-hover: #9333ea;
-  --color-title-color: #171717;
-  --color-subtitle-color: #6b7280;
-  --color-content: #364153;
-  --color-grey-1: #e5e5e5;
-  --color-grey-2: #D4D4D4;
-  --color-grey-3: #A1A1A1;
-  --color-grey-4: #A0A0A0;
-  --animate-send: sending 1s infinite;
-}
-
-.dark {
-  --color-background: #0f0f0f;
-  --color-accent: #9B5DE5;
-  --color-accent-hover: #7c3aed;
-  --color-title-color: #f3f4f6;
-  --color-subtitle-color: #9ca3af;
-  --color-content: #d1d5db;
-  --color-grey-1: #2d2d2d;
-  --color-grey-2: #3f3f3f;
-  --color-grey-3: #525252;
-  --color-grey-4: #6b7280;
-}
-
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --text: #ededed;
-    --sub-text: #a3a3a3;
-    --accent: #c292eb;
-    --accent-hover: #d1aaf2;
+@layer theme {
+  .dark {
+    --color-background: #18181B;
+    --color-main-bg: #010101;
+    --color-accent: #9B5DE5;
+    --color-accent-hover: #7c3aed;
+    --color-title-color: #f4f4f5;
+    --color-subtitle-color: #9ca3af;
+    --color-content: #9f9fa9;
+    --color-grey-1: #2d2d2d;
+    --color-grey-2: #3f3f3f;
+    --color-grey-3: #525252;
+    --color-grey-4: #6b7280;
+    --color-grey-4: #52525b;
   }
-} */
+}
 
+* {
+  transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
 
 body {
-  background: #F0F0F0;
+  background: var(--color-main-bg);
   color: var(--text);
 }
 
@@ -80,7 +65,7 @@ body {
   }
 
   .form-label {
-    @apply absolute md:-top-3 -top-2 left-5 md:text-base text-sm bg-background px-1 z-10 font-medium text-content;
+    @apply absolute md:-top-3 -top-2 left-5 md:text-base text-sm bg-background px-1 z-10 font-medium text-title-color;
   }
 
   .form-input {
