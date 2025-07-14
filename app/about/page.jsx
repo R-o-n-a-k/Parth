@@ -1,8 +1,7 @@
 import React from "react";
-import Skills from "../components/Skills";
 import Counter from "../components/Counter";
-import { aboutData } from "../components/Data";
-import SkillsCodeBlock from "../components/CodeBlock";
+import { skills, aboutData } from "../components/Data";
+import SkillsAccordion from "../components/SkillsAccordion";
 
 const About = () => {
   return (
@@ -27,8 +26,9 @@ const About = () => {
         <div className="skills mt-8">
           <h1 className="section-heading">Technical Skills</h1>
           <div className="mt-4">
-            {/* <Skills /> */}
-            {/* <SkillsCodeBlock /> */}
+            {Object.entries(skills).map(([category, items]) => (
+              <SkillsAccordion key={category} title={category} items={items} />
+            ))}
           </div>
         </div>
       </section>
