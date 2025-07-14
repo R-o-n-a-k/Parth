@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "./components/common/Header";
 import Footer from "./components/common/Footer";
 import NavTabs from "./components/common/NavTabs";
+import { ThemeProvider } from 'next-themes';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -13,16 +14,18 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning> 
       <body
         className={`${inter.variable} antialiased`}
       >
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
         <div className="w-full md:w-[60%] mx-auto bg-background">
         <Header/>
         <NavTabs/>
         {children}
         <Footer/>
         </div>
+        </ThemeProvider>
       </body>
     </html>
   );
