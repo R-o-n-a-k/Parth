@@ -1,13 +1,33 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import { projects } from "../components/Data";
 import { FaArrowRight } from "react-icons/fa";
 import Image from "next/image";
+import ProjectModal from "../components/ProjectModal";
 
 const Project = () => {
+  const [selectedProject, setSelectedProject] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleOpenModal = (proj) => {
+    setSelectedProject(proj);
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setSelectedProject(null);
+  };
+
   return (
     <section className="section">
       <h1 className="section-heading">Projects</h1>
       <div className="projects grid grid-cols-1 gap-6 justify-center">
+        <ProjectModal
+          isOpen={isModalOpen}
+          onClose={handleCloseModal}
+          project={selectedProject}
+        />
         {projects.map((proj) => (
           <div
             key={proj.id}
@@ -29,14 +49,12 @@ const Project = () => {
               <p className="text-content text-sm md:text-base mb-2 md:mb-8 md:mt-4 text-justify ">
                 {proj.description}
               </p>
-              <a
-                href={proj.link}
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                onClick={() => handleOpenModal(proj)}
                 className="btn-small mb-2"
               >
                 Checkout <FaArrowRight className="animate-send" />
-              </a>
+              </button>
             </div>
           </div>
         ))}

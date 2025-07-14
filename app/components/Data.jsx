@@ -9,10 +9,10 @@ import {
   FaMapMarkerAlt,
 } from "react-icons/fa";
 
-import project1 from "../../public/project/project1.jpg";
-import project2 from "../../public/project/project2.jpg";
-import project3 from "../../public/project/project3.jpg";
-import project4 from "../../public/project/project4.jpg";
+import project1 from "../../public/project/project1.webp";
+import project2 from "../../public/project/project2.webp";
+import project3 from "../../public/project/project3.webp";
+import project4 from "../../public/project/project4.webp";
 
 // ----------------------------------------------Header Data---------------------------------------------------
 export const introduction = {
@@ -141,7 +141,14 @@ export const projects = [
     image: project1,
     description:
       "Android-based platform used by global TV manufacturers to manage device settings and deliver OS-level features.",
-    link: "https://github.com/parthpala",
+    details: [
+      "Delivered 10+ high-impact features, including remote pairing, language detection, and GMS setup fl ows.",
+      "Fixed 30+ production issues (crashes, UI bugs); redesigned 4 critical screens in Settings app.",
+      "Led accessibility overhaul for TalkBack, improving navigability and readability.",
+      "Resolved 10+ P1 bugs through critical OS-level debugging and low-memory UI optimizations, signifi cantly improving platform stability and reducing escalations.",
+    ],
+    // link: "https://github.com/parthpala",
+    // Add link only if it is there, else comment or delete the variable
   },
   {
     id: 2,
@@ -149,7 +156,11 @@ export const projects = [
     image: project2,
     description:
       "Mobile app for Belgian postal workers to manage daily parcel deliveries and optimize delivery routes.",
-    link: "https://github.com/parthpala",
+    details: [
+      "Addressed key blockers in unit testing, raising code coverage from ~50% to 89%.",
+      "Improved barcode scanning accuracy and overall app responsiveness.",
+    ],
+    // link: "https://github.com/parthpala",
   },
   {
     id: 3,
@@ -157,6 +168,10 @@ export const projects = [
     image: project3,
     description:
       "Internal HR app for Experian employees across 15+ countries to access salary, rewards, and support services.",
+    details: [
+      "Designed, developed 12–15 modules (salary, rewards, support) from scratch in 25 days, praised for fast, stable rollout; led full-cycle ownership of the app.",
+      "Maintained crash-free rates at 95%+ and implemented encryption protocols.",
+    ],
     link: "https://github.com/parthpala",
   },
   {
@@ -165,6 +180,11 @@ export const projects = [
     image: project4,
     description:
       "Finance-focused Q&A app where users ask and answer investment-related questions; 100k+ downloads on Play Store.",
+    details: [
+      "Designed and developed 20+ modules from scratch; led full-cycle ownership of the app.",
+      "Reclaimed the project when stability dropped (60–70% crash-free) and improved to 99–100%.",
+      "Implemented encryption, error handling, and OWASP security standards.",
+    ],
     link: "https://github.com/parthpala",
   },
 ];
