@@ -56,6 +56,10 @@ body {
     @apply tracking-wider text-xl md:text-2xl font-bold text-title-color mb-2;
   }
 
+  .theme-icon {
+    @apply absolute inset-0 md:text-xl text-lg;
+  }
+
   .btn-normal {
     @apply cursor-pointer inline-flex items-center gap-2 bg-accent hover:bg-accent-hover text-white font-medium tracking-wider text-sm md:text-base px-6 py-3 rounded-full shadow-sm transition-all
   }
