@@ -14,7 +14,7 @@ const Header = () => {
         ></div>
         <div className="relative flex flex-col -mt-15">
           <img
-            src="/hero.png"
+            src="/hero.webp"
             alt="parth pala"
             className="w-24 h-24 md:w-36 md:h-36 self-start ml-4 md:ml-6 rounded-full border-4 border-white object-cover shadow-md"
           />

@@ -9,10 +9,10 @@ import {
   FaMapMarkerAlt,
 } from "react-icons/fa";
 
-import project1 from "../../public/project/project1.jpg";
-import project2 from "../../public/project/project2.jpg";
-import project3 from "../../public/project/project3.jpg";
-import project4 from "../../public/project/project4.jpg";
+import project1 from "../../public/project/project1.webp";
+import project2 from "../../public/project/project2.webp";
+import project3 from "../../public/project/project3.webp";
+import project4 from "../../public/project/project4.webp";
 
 // ----------------------------------------------Header Data---------------------------------------------------
 export const introduction = {
