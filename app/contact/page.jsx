@@ -2,11 +2,20 @@ import React from "react";
 import { contact } from "../components/Data";
 import ContactMeForm from "../components/ContactMeForm";
 
+export const metadata = {
+  title: "Contact",
+  description:
+    "Interested in working together? Reach out to discuss Android development collaborations and opportunities.",
+  alternates: {
+    canonical: "https://parthpala.vercel.app/contact",
+  },
+};
+
 const Contact = () => {
   return (
     <section className="section">
       <div className="about-me">
-        <h1 className="section-heading">Contact Me</h1>
+        <h2 className="section-heading">Contact Me</h2>
       </div>
       <p className="text-content tracking-wide text-sm leading-normal md:text-base">
         If you want to build something great and intuitive. Let's connect &

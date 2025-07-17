@@ -1,7 +1,7 @@
 const Timeline = ({ data, heading = "Timeline" }) => {
   return (
     <>
-      <h1 className="section-heading">{heading}</h1>
+      <h2 className="section-heading">{heading}</h2>
 
       <div className="py-2 pl-4 md:px-6">
         <ol className="relative border-l border-grey-2 w-fit ">
