@@ -12,7 +12,7 @@ export const metadata = {
     default: "Parth Pala | Android Developer",
     template: "%s | Parth Pala"
   },
-  description: "Senior Developer with 7+ years of experience in Android development for mobile and TV platforms. Expert in Kotlin, Java, and delivering scalable, user-focused apps.",
+  description: "Senior Android Developer with 7+ years of experience building scalable, user-focused apps for mobile, tablet, and TV using Kotlin and Java.",
   keywords: [
     'Parth Pala',
     'Android Developer',
@@ -37,7 +37,7 @@ export const metadata = {
   openGraph: {
     title: 'Parth Pala | Android Developer',
     description:
-      'Technology Analyst with 7+ years in Android development. Expert in Kotlin and Java. Focused on scalable, user-centered apps for mobile and TV.',
+      'Senior Android Developer with 7+ years of experience creating scalable apps for Android phones, tablets, and TVs.',
     url: 'https://parthpala.vercel.app/',
     siteName: 'Parth Pala',
     images: [
@@ -55,11 +55,11 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'Parth Pala | Android Developer',
     description:
-      'Technology Analyst with 7 + years in Android development for mobile and TV platforms. Expert in Kotlin and Java.',
+      'Senior Android Developer building user-focused mobile and TV apps using Kotlin, Java, and modern frameworks.',
     images: ['/ParthPalaOG.webp'], 
   },
   alternates: {
-    canonical: '/',
+    canonical: 'https://parthpala.vercel.app/',
   },
 };
 

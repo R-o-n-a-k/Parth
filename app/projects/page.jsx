@@ -21,7 +21,7 @@ const Project = () => {
 
   return (
     <section className="section">
-      <h1 className="section-heading">Projects</h1>
+      <h2 className="section-heading">Projects</h2>
       <div className="projects grid grid-cols-1 gap-6 justify-center">
         <ProjectModal
           isOpen={isModalOpen}
