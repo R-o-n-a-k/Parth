@@ -27,9 +27,9 @@ const Header = () => {
               </h1>
               <ThemeIcon />
             </div>
-            <p className="text-subtitle-color leading-relaxed font-semibold text-base md:text-lg">
+            <h2 className="text-subtitle-color leading-relaxed font-semibold text-base md:text-lg">
               {introduction.designation}
-            </p>
+            </h2>
             <p className="italic text-sm md:text-base text-grey-4">
               {introduction.location}
             </p>

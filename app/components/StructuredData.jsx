@@ -5,21 +5,21 @@ import Script from "next/script";
 const StructuredData = () => {
   const schemaData = {
     "@context": "https://schema.org",
-    "@type": "AndroidDeveloper",
+    "@type": "Person",
     name: "Parth Pala",
     url: "https://parthpala.vercel.app",
     image: "https://parthpala.vercel.app/ParthPala.webp",
     jobTitle: "Senior Android Developer",
     worksFor: {
       "@type": "Organization",
-      name: "Your Company Name",
+      name: "Infosys",
     },
     sameAs: [
       "https://www.linkedin.com/in/parth-pala/",
       "https://github.com/parthpala",
     ],
     alumniOf: {
-      "@type": "University",
+      "@type": "CollegeOrUniversity",
       name: "University of Mumbai",
     },
     knowsAbout: [
