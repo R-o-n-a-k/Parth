@@ -1,7 +1,6 @@
 import {
   FaBriefcase,
   FaGraduationCap,
-  FaInstagram,
   FaLinkedin,
   FaGithub,
   FaEnvelope,
@@ -23,14 +22,16 @@ export const introduction = {
 
 export const socialMediaIcons = [
   {
-    link: "https://www.instagram.com/",
-    icon: <FaInstagram />,
+    name: "phone",
+    link: "tel:+919833422423", // replace with your actual number
+    icon: <FaPhoneAlt />,
   },
   {
+    name: "linkedin",
     link: "https://www.linkedin.com/in/parth-pala/",
     icon: <FaLinkedin />,
   },
-  { link: "https://github.com/parthpala", icon: <FaGithub /> },
+  { name: "github", link: "https://github.com/parthpala", icon: <FaGithub /> },
 ];
 
 // ----------------------------------------------About Data---------------------------------------------------
