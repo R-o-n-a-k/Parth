@@ -15,9 +15,11 @@ import project4 from "../../public/project/project4.webp";
 
 // ----------------------------------------------Header Data---------------------------------------------------
 export const introduction = {
+  image: "/ParthPala.webp",
   name: "Parth Pala",
   designation: "Technology Analyst | Android Specialist",
   location: "Mumbai, India",
+  resume: "/ParthPala_Resume.pdf",
 };
 
 export const socialMediaIcons = [

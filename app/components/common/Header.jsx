@@ -14,8 +14,8 @@ const Header = () => {
         ></div>
         <div className="relative flex flex-col -mt-15">
           <img
-            src="/ParthPala.webp"
-            alt="Parth Pala"
+            src={introduction.image}
+            alt={introduction.name}
             className="w-24 h-24 md:w-36 md:h-36 self-start ml-4 md:ml-6 rounded-full border-4 border-white dark:border-grey-2 object-cover shadow-md"
           />
           <SocialMedia />
@@ -33,12 +33,7 @@ const Header = () => {
             <p className="italic text-sm md:text-base text-grey-4">
               {introduction.location}
             </p>
-            <a
-              href="/ParthPala_Resume.pdf"
-              download
-              className="btn-normal mt-5"
-              // className="inline-flex text-sm md:text-base items-center gap-1 tracking-wider mt-5 px-4 py-2 bg-accent cursor-pointer font-semibold text-white rounded-2xl hover:bg-accent-hover hover:shadow-inner"
-            >
+            <a href={introduction.resume} download className="btn-normal mt-5">
               Download CV
               <FaAngleDoubleDown className="animate-bounce font-bold" />
             </a>

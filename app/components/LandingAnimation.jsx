@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "motion/react";
+import { motion } from "motion/react";
 
 export default function LandingAnimation({ children }) {
   const [step, setStep] = useState(1);
@@ -23,14 +23,14 @@ export default function LandingAnimation({ children }) {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          className="fixed inset-0 z-50 flex items-center justify-center bg-white dark:bg-black text-accent text-2xl md:text-4xl font-bold"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-main-bg text-accent text-2xl md:text-4xl font-bold"
         >
           Initializing Portfolio...
         </motion.div>
       )}
 
       {step === 2 && (
-        <div className="fixed inset-0 bg-white dark:bg-black z-50 flex items-center">
+        <div className="fixed inset-0 bg-main-bg z-50 flex items-center">
           <motion.div
             initial={{ width: 0 }}
             animate={{ width: "100%" }}
@@ -59,12 +59,12 @@ export default function LandingAnimation({ children }) {
       )}
 
       {/* Step 4: Black Panel Slides in Horizontally */}
-      {step >= 4 && (
+      {step === 4 && (
         <motion.div
           initial={{ x: "-100%" }}
           animate={{ x: "0%" }}
           transition={{ duration: 0.4, ease: "easeInOut" }}
-          className="fixed inset-0 bg-background z-30"
+          className="fixed inset-0 bg-background z-50"
         />
       )}
 

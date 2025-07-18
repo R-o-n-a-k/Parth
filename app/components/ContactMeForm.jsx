@@ -40,7 +40,7 @@ const ContactMeForm = () => {
         <input
           type="text"
           name="name"
-          placeholder="FirstName LastName"
+          placeholder="Enter your full name"
           required
           className="form-input"
         />
