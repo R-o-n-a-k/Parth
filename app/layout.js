@@ -4,6 +4,7 @@ import Header from "./components/common/Header";
 import Footer from "./components/common/Footer";
 import NavTabs from "./components/common/NavTabs";
 import { ThemeProvider } from 'next-themes';
+import LandingAnimation from "./components/LandingAnimation";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -70,12 +71,14 @@ export default function RootLayout({ children }) {
         className={`${inter.variable} antialiased`}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+        <LandingAnimation>
         <div className="w-full md:w-[60%] mx-auto bg-background">
         <Header/>
         <NavTabs/>
         {children}
         <Footer/>
         </div>
+        </LandingAnimation>
         </ThemeProvider>
       </body>
     </html>
