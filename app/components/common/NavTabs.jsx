@@ -18,7 +18,7 @@ export default function NavTabs() {
   return (
     <nav
       data-aos="zoom-in"
-      data-aos-offset="10"
+      data-aos-offset="5"
       className="sticky top-0 z-50 transition-all duration-100 ease-in-out"
     >
       <ul className="w-full flex items-center justify-around text-xl md:text-2xl bg-grey-1 text-grey-3">
