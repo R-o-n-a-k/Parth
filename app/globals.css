@@ -48,6 +48,26 @@ body {
   color: var(--text);
 }
 
+::-webkit-scrollbar {
+  width: 6px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-main-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-accent);
+  border-radius: 1px;
+  border: 1px solid transparent;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  cursor: pointer;
+  background-color: var(--color-accent-hover);
+}
+
 @layer components {
   .section {
     @apply h-full p-4 md:p-6 mb-10;

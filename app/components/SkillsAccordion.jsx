@@ -8,7 +8,6 @@ const SkillsAccordion = ({ title, items }) => {
   return (
     <div
       data-aos="zoom-in"
-      data-aos-offset="5"
       className="border-grey-1 border-2 rounded-md mb-4 overflow-hidden"
     >
       <button

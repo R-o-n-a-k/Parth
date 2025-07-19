@@ -14,6 +14,7 @@ export const metadata = {
     default: "Parth Pala | Android Developer",
     template: "%s | Parth Pala"
   },
+  themeColor: "#9B5DE5",
   description: "Senior Android Developer with 7+ years of experience building scalable, user-focused apps for mobile, tablet, and TV using Kotlin and Java.",
   keywords: [
     'Parth Pala',

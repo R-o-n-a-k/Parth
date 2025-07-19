@@ -41,11 +41,7 @@ const About = () => {
           </p>
         </div>
 
-        <div
-          data-aos="zoom-in"
-          data-aos-offset="5"
-          className="flex flex-wrap mt-8 justify-around"
-        >
+        <div data-aos="zoom-in" className="flex flex-wrap mt-8 justify-around">
           <Counter end={aboutData.experience} label="Yrs Experience" />
           <Counter end={aboutData.appsDelivered} label="Apps Delivered" />
           <Counter end={aboutData.issuesResolved} label="Issues Resolved" />
