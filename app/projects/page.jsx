@@ -21,7 +21,9 @@ const Project = () => {
 
   return (
     <section className="section">
-      <h2 className="section-heading">Projects</h2>
+      <h2 data-aos="fade-right" data-aos-offset="5" className="section-heading">
+        Projects
+      </h2>
       <div className="projects grid grid-cols-1 gap-6 justify-center">
         <ProjectModal
           isOpen={isModalOpen}
@@ -30,6 +32,8 @@ const Project = () => {
         />
         {projects.map((proj) => (
           <div
+            data-aos="fade-up"
+            data-aos-offset="5"
             key={proj.id}
             className="flex flex-col md:flex-row gap-0.5 border-[1.5px] md:border-2 rounded-md border-grey-1 bg-transparent"
           >

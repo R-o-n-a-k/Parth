@@ -4,7 +4,8 @@ import Header from "./components/common/Header";
 import Footer from "./components/common/Footer";
 import NavTabs from "./components/common/NavTabs";
 import { ThemeProvider } from 'next-themes';
-import LandingAnimation from "./components/LandingAnimation";
+import LandingAnimation from "./components/animation/LandingAnimation";
+import AnimateOnScroll from "./components/animation/AnimateOnScroll";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -72,6 +73,7 @@ export default function RootLayout({ children }) {
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
         <LandingAnimation>
+        <AnimateOnScroll/>
         <div className="w-full md:w-[60%] mx-auto bg-background">
         <Header/>
         <NavTabs/>

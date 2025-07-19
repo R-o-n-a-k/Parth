@@ -6,7 +6,11 @@ const SkillsAccordion = ({ title, items }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="border-grey-1 border-2 rounded-md mb-4 overflow-hidden">
+    <div
+      data-aos="zoom-in"
+      data-aos-offset="5"
+      className="border-grey-1 border-2 rounded-md mb-4 overflow-hidden"
+    >
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="text-sm md:text-base cursor-pointer w-full px-4 py-3 flex justify-between items-center text-content font-medium bg-grey-1 hover:bg-grey-2 transition"
