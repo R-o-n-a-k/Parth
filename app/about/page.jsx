@@ -18,23 +18,47 @@ const About = () => {
       <StructuredData />
       <section className="section">
         <div className="about-me">
-          <h2 className="section-heading">About Me</h2>
-          <p className="text-content w-full text-justify tracking-wide text-sm leading-normal md:text-lg">
+          <h2
+            data-aos="fade-right"
+            data-aos-offset="5"
+            className="section-heading"
+          >
+            About Me
+          </h2>
+          <p
+            data-aos="fade-up"
+            data-aos-offset="5"
+            className="text-content w-full text-justify tracking-wide text-sm leading-normal md:text-lg"
+          >
             {aboutData.firstPara}
           </p>
-          <p className="text-content w-full text-justify tracking-wide text-sm leading-normal md:text-lg mt-4">
+          <p
+            data-aos="fade-up"
+            data-aos-offset="5"
+            className="text-content w-full text-justify tracking-wide text-sm leading-normal md:text-lg mt-4"
+          >
             {aboutData.secondPara}
           </p>
         </div>
 
-        <div className="flex flex-wrap mt-8 justify-around">
+        <div
+          data-aos="zoom-in"
+          data-aos-offset="5"
+          className="flex flex-wrap mt-8 justify-around"
+        >
           <Counter end={aboutData.experience} label="Yrs Experience" />
           <Counter end={aboutData.appsDelivered} label="Apps Delivered" />
           <Counter end={aboutData.issuesResolved} label="Issues Resolved" />
         </div>
 
         <div className="skills mt-8">
-          <h2 className="section-heading">Technical Skills</h2>
+          <h2
+            data-aos="fade-right"
+            data-aos-offset="5"
+            className="section-heading"
+          >
+            Technical Skills
+          </h2>
           <div className="mt-4">
             {Object.entries(skills).map(([category, items]) => (
               <SkillsAccordion key={category} title={category} items={items} />

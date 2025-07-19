@@ -35,7 +35,7 @@ const ContactMeForm = () => {
 
   return (
     <form className="w-full my-8" ref={form} onSubmit={sendEmail}>
-      <div className="relative mb-6">
+      <div data-aos="fade-up" data-aos-offset="5" className="relative mb-6">
         <label className="form-label">Name</label>
         <input
           type="text"
@@ -45,7 +45,12 @@ const ContactMeForm = () => {
           className="form-input"
         />
       </div>
-      <div className="relative mb-6">
+      <div
+        data-aos="fade-up"
+        data-aos-offset="5"
+        data-aos-delay="100"
+        className="relative mb-6"
+      >
         <label className="form-label">Email</label>
         <input
           type="email"
@@ -55,7 +60,12 @@ const ContactMeForm = () => {
           className="form-input"
         />
       </div>
-      <div className="relative mb-6">
+      <div
+        data-aos="fade-up"
+        data-aos-offset="5"
+        data-aos-delay="200"
+        className="relative mb-6"
+      >
         <label className="form-label">Message</label>
         <textarea
           name="message"
@@ -66,7 +76,12 @@ const ContactMeForm = () => {
           className="form-input resize-none"
         />
       </div>
-      <div className="text-center">
+      <div
+        data-aos="zoom-in"
+        data-aos-offset="5"
+        data-aos-delay="200"
+        className="text-center"
+      >
         <button type="submit" className="btn-normal">
           Send <IoSend className="animate-send" />
         </button>

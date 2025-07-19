@@ -19,7 +19,10 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm px-4">
-      <div className="bg-background border border-grey-2 rounded-lg p-4 max-w-lg w-full shadow-lg relative">
+      <div
+        data-aos="zoom-in"
+        className="bg-background border border-grey-2 rounded-lg p-4 max-w-lg w-full shadow-lg relative"
+      >
         <button
           className="cursor-pointer absolute top-2 right-3 text-2xl font-bold text-accent hover:text-red-500"
           onClick={onClose}

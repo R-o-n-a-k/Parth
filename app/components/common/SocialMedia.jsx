@@ -8,6 +8,7 @@ const SocialMedia = () => {
       <div className="flex flex-row gap-6 md:text-2xl text-xl absolute md:top-24 top-18 right-6 text-subtitle-color">
         {socialMediaIcons.map((item) => (
           <a
+            data-aos="zoom-in"
             key={item.name}
             target={item.name === "phone" ? undefined : "_blank"}
             rel={item.name === "phone" ? undefined : "noopener noreferrer"}
