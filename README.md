@@ -22,10 +22,6 @@ I'm **Parth Pala**, a Senior Android Developer with 7+ years of experience creat
 - **Deployment:** Vercel
 - **Icons & Fonts:** React Icons
 
-## 📫 Contact
-Want to collabrate and build something great? <p> <a href="mailto:palaparth28@gmail.com"><img src="https://img.shields.io/badge/email-%23D14836.svg?&style=for-the-badge&logo=email&logoColor=white" height="25">
-</a></p> 
-
 ## 🤝 Run Locally
 
 To run this project locally:
@@ -51,6 +47,9 @@ npm run dev
 ## 🌐 Live Demo
 🔗 [Portfolio](https://parthpala.vercel.app/)
 
+## 📫 Contact
+Want to collabrate and build something great? <p> <a href="mailto:palaparth28@gmail.com"><img src="https://img.shields.io/badge/email-%23D14836.svg?&style=for-the-badge&logo=email&logoColor=white" height="25">
+</a></p> 
 
 <hr>
 <p align="center">Curated with Next.js, to showcase myself on the internet 🎨</p>
