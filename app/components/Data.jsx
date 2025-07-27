@@ -13,6 +13,87 @@ import project2 from "../../public/project/project2.webp";
 import project3 from "../../public/project/project3.webp";
 import project4 from "../../public/project/project4.webp";
 
+// ----------------------------------------------Meta Data---------------------------------------------------
+export const metaDataContent = {
+  title: {
+    default: "Parth Pala | Android Developer",
+    template: "%s | Parth Pala",
+  },
+  description:
+    "Senior Android Developer with 7+ years of experience building scalable, user-focused apps for mobile, tablet, and TV using Kotlin and Java.",
+  keywords: [
+    "Parth Pala",
+    "Android Developer",
+    "Technology Analyst",
+    "Kotlin Developer",
+    "Java Developer",
+    "Android TV",
+    "Mobile App Developer",
+    "Jetpack Compose",
+    "MVVM Architecture",
+    "Coroutines",
+    "Dependency Injection",
+    "Android Portfolio",
+    "Android Engineer",
+    "Scalable Mobile Apps",
+    "User-Focused Android Apps",
+  ],
+  authors: [{ name: "Parth Pala", url: "https://parthpala.vercel.app/" }],
+  creator: "Parth Pala",
+  publisher: "Parth Pala",
+  metadataBase: "https://parthpala.vercel.app/", // keep as string here
+  openGraph: {
+    title: "Parth Pala | Android Developer",
+    description:
+      "Senior Android Developer with 7+ years of experience creating scalable apps for Android phones, tablets, and TVs.",
+    url: "https://parthpala.vercel.app/",
+    siteName: "Parth Pala",
+    images: [
+      {
+        url: "/ParthPalaOG.webp",
+        width: 1200,
+        height: 630,
+        alt: "Parth Pala - Android Developer",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Parth Pala | Android Developer",
+    description:
+      "Senior Android Developer building user-focused mobile and TV apps using Kotlin, Java, and modern frameworks.",
+    images: ["/ParthPalaOG.webp"],
+  },
+  alternates: {
+    canonical: "https://parthpala.vercel.app/",
+  },
+};
+
+// Separate pages SEO tags
+export const metaContentPages = {
+  aboutDesc:
+    "Senior Android Developer with 7+ years of experience building scalable and user-centric apps for phones, tablets, and TV using Kotlin, Java, and modern Android frameworks.",
+  aboutCanonical: "https://parthpala.vercel.app/about",
+  //career
+  careerTitle: "Career",
+  careerDesc:
+    "Led impactful Android projects including Google TV, mentoring teams and delivering production-grade mobile solutions.",
+  careerCanonical: "https://parthpala.vercel.app/career",
+  //projects
+  projectsTitle: "Projects",
+  projectsDesc:
+    "Explore a portfolio of Android projects ranging from mobile apps to Android TV platforms, showcasing expertise in Kotlin, Jetpack Compose, and performance-driven development.",
+  projectsCanonical: "https://parthpala.vercel.app/projects",
+
+  //contact
+  contactTitle: "Contact",
+  contactDesc:
+    "Interested in working together? Reach out to discuss Android development collaborations and opportunities.",
+  contactCanonical: "https://parthpala.vercel.app/contact",
+};
+
 // ----------------------------------------------Header Data---------------------------------------------------
 export const introduction = {
   image: "/ParthPala.webp",

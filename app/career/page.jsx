@@ -1,13 +1,12 @@
 import React from "react";
 import Timeline from "../components/Timeline";
-import { educationData, workData } from "../components/Data";
+import { educationData, metaContentPages, workData } from "../components/Data";
 
 export const metadata = {
-  title: "Career",
-  description:
-    "Led impactful Android projects including Google TV, mentoring teams and delivering production-grade mobile solutions.",
+  title: metaContentPages.careerTitle,
+  description: metaContentPages.careerDesc,
   alternates: {
-    canonical: "https://parthpala.vercel.app/career",
+    canonical: metaContentPages.careerCanonical,
   },
 };
 
