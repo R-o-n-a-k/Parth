@@ -1,14 +1,13 @@
 import React from "react";
 import Counter from "../components/Counter";
-import { skills, aboutData } from "../components/Data";
+import { skills, aboutData, metaContentPages } from "../components/Data";
 import SkillsAccordion from "../components/SkillsAccordion";
 import StructuredData from "../components/StructuredData";
 
 export const metadata = {
-  description:
-    "Senior Android Developer with 7+ years of experience building scalable and user-centric apps for phones, tablets, and TV using Kotlin, Java, and modern Android frameworks.",
+  description: metaContentPages.aboutDesc,
   alternates: {
-    canonical: "https://parthpala.vercel.app/",
+    canonical: metaContentPages.aboutCanonical,
   },
 };
 
@@ -41,7 +40,11 @@ const About = () => {
           </p>
         </div>
 
-        <div data-aos="zoom-in" className="flex flex-wrap mt-8 justify-around">
+        <div
+          data-aos="zoom-in"
+          data-aos-offset="5"
+          className="flex flex-wrap mt-8 justify-around"
+        >
           <Counter end={aboutData.experience} label="Yrs Experience" />
           <Counter end={aboutData.appsDelivered} label="Apps Delivered" />
           <Counter end={aboutData.issuesResolved} label="Issues Resolved" />

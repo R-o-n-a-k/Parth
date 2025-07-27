@@ -1,13 +1,12 @@
 import React from "react";
-import { contact } from "../components/Data";
+import { contact, metaContentPages } from "../components/Data";
 import ContactMeForm from "../components/ContactMeForm";
 
 export const metadata = {
-  title: "Contact",
-  description:
-    "Interested in working together? Reach out to discuss Android development collaborations and opportunities.",
+  title: metaContentPages.contactTitle,
+  description: metaContentPages.contactDesc,
   alternates: {
-    canonical: "https://parthpala.vercel.app/contact",
+    canonical: metaContentPages.contactCanonical,
   },
 };
 

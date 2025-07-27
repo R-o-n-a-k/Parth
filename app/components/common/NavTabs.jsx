@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { FaUser, FaFolderOpen, FaBriefcase, FaEnvelope } from "react-icons/fa";
-import { PiCertificateFill } from "react-icons/pi";
 
 export default function NavTabs() {
   const pathname = usePathname();
@@ -17,8 +16,8 @@ export default function NavTabs() {
 
   return (
     <nav
-      data-aos="zoom-in"
-      data-aos-offset="5"
+      data-aos="fade-up"
+      data-aos-offset="1"
       className="sticky top-0 z-50 transition-all duration-100 ease-in-out"
     >
       <ul className="w-full flex items-center justify-around text-xl md:text-2xl bg-grey-1 text-grey-3">
