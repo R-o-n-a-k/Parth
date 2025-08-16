@@ -66,7 +66,7 @@ export const metaDataContent = {
     card: "summary_large_image",
     title: "Parth Pala | Android Developer",
     description:
-      "Senior Android Developer building user-focused mobile and TV apps using Kotlin, Java, and modern frameworks.",
+      "Senior Android Developer building user focused mobile and TV apps using Kotlin, Java, and modern frameworks.",
     images: ["/ParthPalaOG.webp"],
   },
   alternates: {
