@@ -21,6 +21,9 @@ export const metaDataContent = {
   },
   description:
     "Senior Android Developer with 7+ years of experience building scalable, user-focused apps for mobile, tablet, and TV using Kotlin and Java.",
+  verification: {
+    google: "oPfZV3uf-uIZFjb9diMT7grDKNexLvs_0UBN3Iy5adg",
+  },
   keywords: [
     "Parth Pala",
     "Android Developer",
