@@ -21,6 +21,9 @@ export const metaDataContent = {
   },
   description:
     "Senior Android Developer with 7+ years of experience building scalable, user-focused apps for mobile, tablet, and TV using Kotlin and Java.",
+  verification: {
+    google: "oPfZV3uf-uIZFjb9diMT7grDKNexLvs_0UBN3Iy5adg",
+  },
   keywords: [
     "Parth Pala",
     "Android Developer",
@@ -63,7 +66,7 @@ export const metaDataContent = {
     card: "summary_large_image",
     title: "Parth Pala | Android Developer",
     description:
-      "Senior Android Developer building user-focused mobile and TV apps using Kotlin, Java, and modern frameworks.",
+      "Senior Android Developer building user focused mobile and TV apps using Kotlin, Java, and modern frameworks.",
     images: ["/ParthPalaOG.webp"],
   },
   alternates: {
