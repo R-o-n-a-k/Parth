@@ -1,4 +1,3 @@
-import React from "react";
 import Timeline from "../components/Timeline";
 import { educationData, metaContentPages, workData } from "../components/Data";
 

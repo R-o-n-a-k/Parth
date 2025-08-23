@@ -1,4 +1,3 @@
-import React from "react";
 import { contact, metaContentPages } from "../components/Data";
 import ContactMeForm from "../components/ContactMeForm";
 

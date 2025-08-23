@@ -53,7 +53,7 @@ export const metaDataContent = {
     siteName: "Parth Pala",
     images: [
       {
-        url: "/ParthPalaOG.webp",
+        url: "/ParthPala.webp",
         width: 1200,
         height: 630,
         alt: "Parth Pala - Android Developer",

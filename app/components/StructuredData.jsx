@@ -7,6 +7,7 @@ const StructuredData = () => {
     "@context": "https://schema.org",
     "@type": "Person",
     name: "Parth Pala",
+    alternateName: "Parth Pala",
     url: "https://parthpala.vercel.app",
     image: "https://parthpala.vercel.app/ParthPala.webp",
     jobTitle: "Senior Android Developer",

@@ -1,4 +1,3 @@
-import React from "react";
 import SocialMedia from "./SocialMedia";
 import { FaAngleDoubleDown } from "react-icons/fa";
 import { introduction } from "../Data";

@@ -1,4 +1,3 @@
-import React from "react";
 import Counter from "../components/Counter";
 import { skills, aboutData, metaContentPages } from "../components/Data";
 import SkillsAccordion from "../components/SkillsAccordion";
