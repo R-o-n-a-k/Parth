@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 const Counter = ({ end, label, duration = 3000 }) => {
   const [count, setCount] = useState(0);
