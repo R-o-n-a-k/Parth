@@ -1,0 +1,120 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* @theme inline {
+  --color-foreground: var(--foreground);
+} */
+
+/* --color-accent: #c084fc; */
+@theme {
+  --color-background: #fafafa;
+  --color-main-bg: #F0F0F0;
+  --color-accent: #9B5DE5;
+  --color-accent-hover: #9333ea;
+  --color-title-color: #171717;
+  --color-subtitle-color: #6b7280;
+  --color-content: #364153;
+  --color-grey-1: #e5e5e5;
+  --color-grey-2: #D4D4D4;
+  --color-grey-3: #A1A1A1;
+  --color-grey-4: #A0A0A0;
+  --animate-send: sending 1s infinite;
+  --animate-theme: themeIcon 2s ease-in-out infinite;
+}
+
+@layer theme {
+  .dark {
+    --color-background: #18181B;
+    --color-main-bg: #010101;
+    --color-accent: #9B5DE5;
+    --color-accent-hover: #7c3aed;
+    --color-title-color: #f4f4f5;
+    --color-subtitle-color: #9ca3af;
+    --color-content: #9f9fa9;
+    --color-grey-1: #2d2d2d;
+    --color-grey-2: #3f3f3f;
+    --color-grey-3: #525252;
+    --color-grey-4: #6b7280;
+    --color-grey-4: #52525b;
+  }
+}
+
+* {
+  transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+body {
+  background: var(--color-main-bg);
+  color: var(--text);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-main-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-accent);
+  border-radius: 1px;
+  border: 1px solid transparent;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  cursor: pointer;
+  background-color: var(--color-accent-hover);
+}
+
+@layer components {
+  .section {
+    @apply h-full p-4 md:p-6 mb-10;
+  }
+
+  .section-heading {
+    @apply tracking-wider text-xl md:text-2xl font-bold text-title-color mb-2;
+  }
+
+  .theme-icon {
+    @apply absolute inset-0 md:text-xl text-lg animate-theme;
+  }
+
+  .btn-normal {
+    @apply cursor-pointer inline-flex items-center gap-2 bg-accent hover:bg-accent-hover text-white font-medium tracking-wider text-sm md:text-base px-6 py-3 rounded-full shadow-md transition-all
+  }
+
+  .btn-small {
+    @apply cursor-pointer inline-flex items-center gap-2 bg-accent hover:bg-accent-hover text-white font-medium text-sm md:text-base px-4 py-2 rounded-full shadow-md transition-all
+  }
+
+  .form-label {
+    @apply absolute md:-top-3 -top-2 left-5 md:text-base text-sm bg-background px-1 z-10 font-medium text-title-color;
+  }
+
+  .form-input {
+    @apply w-full h-full border-[1.5px] md:border-2 border-grey-2 rounded-md p-5 bg-transparent text-content placeholder:text-sm focus:outline-none focus:border-green-400 invalid:focus:border-rose-500
+  }
+}
+
+@keyframes sending {
+  50% {
+    transform: translateX(.2rem);
+  }
+}
+
+@keyframes themeIcon {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

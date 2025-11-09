@@ -1,9 +1,9 @@
 "use client";
-import { IoSend } from "react-icons/io5";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast, Bounce } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { SendHorizontal } from "lucide-react";
 
 const ContactMeForm = () => {
   const form = useRef();
@@ -83,7 +83,7 @@ const ContactMeForm = () => {
         className="text-center"
       >
         <button type="submit" className="btn-normal">
-          Send <IoSend className="animate-send" />
+          Send <SendHorizontal className="animate-send" />
         </button>
       </div>
       <ToastContainer

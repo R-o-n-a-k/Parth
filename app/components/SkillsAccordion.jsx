@@ -1,6 +1,6 @@
 "use client";
+import { ChevronDown, ChevronUp } from "lucide-react";
 import { useState } from "react";
-import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
 const SkillsAccordion = ({ title, items }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,9 +16,9 @@ const SkillsAccordion = ({ title, items }) => {
       >
         {title}
         {isOpen ? (
-          <FaChevronUp className="text-sm text-accent" />
+          <ChevronUp className="text-sm text-accent" />
         ) : (
-          <FaChevronDown className="text-sm text-accent" />
+          <ChevronDown className="text-sm text-accent" />
         )}
       </button>
 

@@ -1,17 +1,12 @@
-import {
-  FaBriefcase,
-  FaGraduationCap,
-  FaLinkedin,
-  FaGithub,
-  FaEnvelope,
-  FaPhoneAlt,
-  FaMapMarkerAlt,
-} from "react-icons/fa";
-
 import project1 from "../../public/project/project1.webp";
 import project2 from "../../public/project/project2.webp";
 import project3 from "../../public/project/project3.webp";
 import project4 from "../../public/project/project4.webp";
+import { Phone } from "lucide-react";
+import { Briefcase } from "lucide-react";
+import { GraduationCap } from "lucide-react";
+import { Mail } from "lucide-react";
+import { MapPin } from "lucide-react";
 
 // ----------------------------------------------Meta Data---------------------------------------------------
 export const metaDataContent = {
@@ -110,14 +105,14 @@ export const socialMediaIcons = [
   {
     name: "phone",
     link: "tel:+919833422423", // replace with your actual number
-    icon: <FaPhoneAlt />,
+    icon: <Phone />,
   },
   {
     name: "linkedin",
     link: "https://www.linkedin.com/in/parth-pala/",
-    icon: <FaLinkedin />,
+    icon: <Phone />,
   },
-  { name: "github", link: "https://github.com/parthpala", icon: <FaGithub /> },
+  { name: "github", link: "https://github.com/parthpala", icon: <Phone /> },
 ];
 
 // ----------------------------------------------About Data---------------------------------------------------
@@ -172,7 +167,7 @@ export const workData = [
     company: "Infosys",
     location: "Pune, India",
     date: "April 2023 – Present",
-    icon: <FaBriefcase />,
+    icon: <Briefcase />,
     description: [
       "Led a team of 5 developers for Google TV & Settings apps across global platforms.",
       "Delivered 5+ feature rollouts including GMS login, remote pairing & localization automation.",
@@ -186,7 +181,7 @@ export const workData = [
     company: "Infosys",
     location: "Pune, India",
     date: "July 2018 – April 2023",
-    icon: <FaBriefcase />,
+    icon: <Briefcase />,
     description: [
       "Increased unit test coverage from ~45% to 89% in the BPOST project by restructuring testable components and resolving blockers.",
       "Improved app stability by reducing crash rates by 30% through performance optimizations and refactoring.",
@@ -197,7 +192,7 @@ export const workData = [
     company: "MOBITRAIL",
     location: "Mumbai, India",
     date: "Sept 2017 – July 2021.",
-    icon: <FaBriefcase />,
+    icon: <Briefcase />,
     description: [
       "Reduced app crashes by 30% through code optimization and modular architecture.",
       "Collaborated with QA, UX, and PM teams to enhance performance and ensure multi-device compatibility.",
@@ -214,7 +209,7 @@ export const educationData = [
     company: "University of Mumbai",
     location: "Mumbai, India",
     date: "2014 – 2017",
-    icon: <FaGraduationCap />,
+    icon: <GraduationCap />,
     description:
       "Studied core CS subjects, completed Android internships, and participated in app hackathons.",
   },
@@ -266,7 +261,7 @@ export const projects = [
     title: "IIFL InvestorQ",
     image: project4,
     description:
-      "Finance-focused Q&A app where users ask and answer investment-related questions; 100k+ downloads on Play Store.",
+      "Finance QnA app where users ask & answer investment-related questions; 100k+ downloads on PlayStore.",
     details: [
       "Designed and developed 20+ modules from scratch; led full-cycle ownership of the app.",
       "Reclaimed the project when stability dropped (60–70% crash-free) and improved to 99–100%.",
@@ -279,15 +274,15 @@ export const projects = [
 // ----------------------------------------------Contact Data---------------------------------------------------
 export const contact = [
   {
-    icon: <FaEnvelope />,
+    icon: <Mail />,
     name: "palaparth28@gmail.com",
   },
   {
-    icon: <FaPhoneAlt />,
+    icon: <Phone />,
     name: "+91-9833422423",
   },
   {
-    icon: <FaMapMarkerAlt />,
+    icon: <MapPin />,
     name: "Mumbai, Maharashtra, India",
   },
 ];

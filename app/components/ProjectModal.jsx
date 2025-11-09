@@ -1,6 +1,6 @@
 "use client";
+import { ExternalLink } from "lucide-react";
 import { useEffect } from "react";
-import { FaExternalLinkAlt } from "react-icons/fa";
 
 const ProjectModal = ({ isOpen, onClose, project }) => {
   useEffect(() => {
@@ -24,16 +24,16 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
         className="bg-background border border-grey-2 rounded-lg p-4 max-w-lg w-full shadow-lg relative"
       >
         <button
-          className="cursor-pointer absolute top-2 right-3 text-2xl font-bold text-accent hover:text-red-500"
+          className="cursor-pointer absolute top-2 right-3 text-2xl font-bold text-primary hover:text-destructive"
           onClick={onClose}
         >
           &times;
         </button>
 
-        <h2 className="text-title-color text-lg font-bold mb-2">
+        <h2 className="text-foreground text-lg font-bold mb-2">
           {project.title}
         </h2>
-        <ul className="list-disc px-4 mb-2 space-y-1 text-sm md:text-base text-content text-justify">
+        <ul className="list-disc px-4 mb-2 space-y-1 text-sm md:text-base text-muted-foreground text-justify">
           {project.details?.map((item, idx) => (
             <li key={idx}>{item}</li>
           ))}
@@ -44,9 +44,9 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
             href={project.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-accent hover:underline text-sm font-medium"
+            className="inline-flex items-center gap-2 text-primary hover:underline text-sm font-medium"
           >
-            View Live <FaExternalLinkAlt className="text-xs" />
+            View Live <ExternalLink className="text-xs" size={15} />
           </a>
         )}
       </div>

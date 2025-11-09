@@ -23,19 +23,19 @@ export default function LandingAnimation({ children }) {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          className="fixed inset-0 z-50 flex items-center justify-center bg-main-bg text-accent text-2xl md:text-4xl font-bold"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-outside-background text-primary text-2xl md:text-4xl font-bold"
         >
           Initializing Portfolio...
         </motion.div>
       )}
 
       {step === 2 && (
-        <div className="fixed inset-0 bg-main-bg z-50 flex items-center">
+        <div className="fixed inset-0 bg-outside-background z-50 flex items-center">
           <motion.div
             initial={{ width: 0 }}
             animate={{ width: "100%" }}
             transition={{ duration: 0.5 }}
-            className="h-[1.5px] bg-accent absolute left-0"
+            className="h-[1.5px] bg-primary absolute left-0"
           />
         </div>
       )}
@@ -47,13 +47,13 @@ export default function LandingAnimation({ children }) {
             initial={{ scaleY: 0 }}
             animate={{ scaleY: 1 }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
-            className="fixed top-0 left-0 right-0 h-1/2 origin-bottom bg-accent z-40"
+            className="fixed top-0 left-0 right-0 h-1/2 origin-bottom bg-primary z-40"
           />
           <motion.div
             initial={{ scaleY: 0 }}
             animate={{ scaleY: 1 }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
-            className="fixed bottom-0 left-0 right-0 h-1/2 origin-top bg-accent z-40"
+            className="fixed bottom-0 left-0 right-0 h-1/2 origin-top bg-primary z-40"
           />
         </>
       )}
