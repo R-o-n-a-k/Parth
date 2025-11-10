@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
         <LandingAnimation>
         <AnimateOnScroll/>
-        <div className="w-full md:w-[60%] mx-auto bg-background">
+        <div className="w-full md:w-[60%] mx-auto bg-background selection:bg-primary/20">
         <Header/>
         <NavTabs/>
         {children}

@@ -6,13 +6,13 @@ const Timeline = ({ data, heading = "Timeline" }) => {
       </h2>
       <div className="overflow-hidden">
         <div className="py-2 pl-4 md:px-6">
-          <ol className="relative border-l border-grey-2 w-fit ">
+          <ol className="relative border-l border-grey-3 w-fit ">
             {data.map((item, index) => (
               <li key={index} className="mb-10  ml-6 md:ml-8">
                 <span
                   data-aos="zoom-in"
                   data-aos-offset="5"
-                  className="absolute flex items-center justify-center w-8 h-8 md:w-10 md:h-10 bg-accent rounded-full -left-4 md:-left-5 ring-4 ring-background text-white"
+                  className="absolute flex items-center justify-center w-8 h-8 md:w-10 md:h-10 bg-primary rounded-full -left-4 md:-left-5 ring-4 ring-background text-white"
                 >
                   {item.icon}
                 </span>
@@ -20,7 +20,7 @@ const Timeline = ({ data, heading = "Timeline" }) => {
                 <time
                   data-aos="fade-left"
                   data-aos-offset="5"
-                  className="block mb-0.5 text-xs md:text-sm font-normal text-subtitle-color"
+                  className="block mb-0.5 text-xs md:text-sm font-normal text-muted-foreground"
                 >
                   {item.date}
                 </time>
@@ -29,7 +29,7 @@ const Timeline = ({ data, heading = "Timeline" }) => {
                   data-aos="fade-left"
                   data-aos-delay="100"
                   data-aos-offset="5"
-                  className="md:text-lg text-base font-medium text-title-color"
+                  className="md:text-lg text-base font-medium text-foreground"
                 >
                   {item.title} @ {item.company}
                 </h3>
@@ -38,13 +38,13 @@ const Timeline = ({ data, heading = "Timeline" }) => {
                   data-aos="fade-left"
                   data-aos-delay="200"
                   data-aos-offset="5"
-                  className="text-xs md:text-sm text-grey-4 mb-2"
+                  className="text-xs md:text-sm text-grey-3 mb-2"
                 >
                   {item.location}
                 </p>
 
                 {Array.isArray(item.description) ? (
-                  <ul className="list-none space-y-1.5 md:space-y-1.5 w-full text-justify text-sm md:text-base text-content pl-4 relative">
+                  <ul className="list-none space-y-1.5 md:space-y-1.5 w-full text-justify text-sm md:text-base text-muted-foreground pl-4 relative">
                     {item.description.map((point, i) => (
                       <li
                         data-aos="fade-up"
@@ -60,7 +60,7 @@ const Timeline = ({ data, heading = "Timeline" }) => {
                   <p
                     data-aos="fade-up"
                     data-aos-offset="5"
-                    className="space-y-0.5 w-full text-justify text-sm md:text-base text-content pl-4 relative"
+                    className="space-y-0.5 w-full text-justify text-sm md:text-base text-muted-foreground pl-4 relative"
                   >
                     {item.description}
                   </p>

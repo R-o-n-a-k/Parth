@@ -1,17 +1,12 @@
-import {
-  FaBriefcase,
-  FaGraduationCap,
-  FaLinkedin,
-  FaGithub,
-  FaEnvelope,
-  FaPhoneAlt,
-  FaMapMarkerAlt,
-} from "react-icons/fa";
-
 import project1 from "../../public/project/project1.webp";
 import project2 from "../../public/project/project2.webp";
 import project3 from "../../public/project/project3.webp";
 import project4 from "../../public/project/project4.webp";
+import { Phone } from "lucide-react";
+import { Briefcase } from "lucide-react";
+import { GraduationCap } from "lucide-react";
+import { Mail } from "lucide-react";
+import { MapPin } from "lucide-react";
 
 // ----------------------------------------------Meta Data---------------------------------------------------
 export const metaDataContent = {
@@ -99,7 +94,7 @@ export const metaContentPages = {
 
 // ----------------------------------------------Header Data---------------------------------------------------
 export const introduction = {
-  image: "/ParthPala.webp",
+  image: "/ParthPala.png",
   name: "Parth Pala",
   designation: "Technology Analyst | Android Specialist",
   location: "Mumbai, India",
@@ -109,15 +104,35 @@ export const introduction = {
 export const socialMediaIcons = [
   {
     name: "phone",
-    link: "tel:+919833422423", // replace with your actual number
-    icon: <FaPhoneAlt />,
+    link: "tel:+919833422423",
+    icon: <Phone className="md:w-6 md:h-6 w-4 h-4"/>,
   },
   {
     name: "linkedin",
     link: "https://www.linkedin.com/in/parth-pala/",
-    icon: <FaLinkedin />,
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        className="md:w-6 md:h-6 w-4 h-4"
+      >
+        <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8h4V24h-4V8zM9 8h3.6v2.16h.05c.5-.94 1.73-1.93 3.55-1.93 3.8 0 4.5 2.5 4.5 5.74V24h-4v-7.8c0-1.86-.03-4.24-2.58-4.24-2.58 0-2.98 2.02-2.98 4.1V24h-4V8z" />
+      </svg>
+    ),
   },
-  { name: "github", link: "https://github.com/parthpala", icon: <FaGithub /> },
+  {
+    name: "github", link: "https://github.com/parthpala", icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        className="md:w-6 md:h-6 w-4 h-4"
+      >
+        <path d="M12 .297C5.37.297 0 5.67 0 12.297c0 5.292 3.438 9.787 8.205 11.387.6.112.82-.258.82-.577v-2.234c-3.338.727-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.09-.744.082-.729.082-.729 1.205.086 1.84 1.238 1.84 1.238 1.07 1.834 2.807 1.304 3.492.997.108-.776.418-1.304.762-1.604-2.665-.304-5.466-1.333-5.466-5.93 0-1.31.467-2.382 1.235-3.22-.123-.303-.535-1.524.118-3.176 0 0 1.008-.322 3.3 1.23a11.5 11.5 0 0 1 3.003-.404c1.02.005 2.047.138 3.003.404 2.29-1.552 3.297-1.23 3.297-1.23.655 1.652.243 2.873.12 3.176.77.838 1.233 1.91 1.233 3.22 0 4.61-2.804 5.624-5.475 5.92.43.372.823 1.103.823 2.222v3.293c0 .322.216.694.825.576C20.565 22.08 24 17.585 24 12.297 24 5.67 18.627.297 12 .297z" />
+      </svg>
+    ),
+  },
 ];
 
 // ----------------------------------------------About Data---------------------------------------------------
@@ -172,7 +187,7 @@ export const workData = [
     company: "Infosys",
     location: "Pune, India",
     date: "April 2023 – Present",
-    icon: <FaBriefcase />,
+    icon: <Briefcase />,
     description: [
       "Led a team of 5 developers for Google TV & Settings apps across global platforms.",
       "Delivered 5+ feature rollouts including GMS login, remote pairing & localization automation.",
@@ -186,7 +201,7 @@ export const workData = [
     company: "Infosys",
     location: "Pune, India",
     date: "July 2018 – April 2023",
-    icon: <FaBriefcase />,
+    icon: <Briefcase />,
     description: [
       "Increased unit test coverage from ~45% to 89% in the BPOST project by restructuring testable components and resolving blockers.",
       "Improved app stability by reducing crash rates by 30% through performance optimizations and refactoring.",
@@ -197,7 +212,7 @@ export const workData = [
     company: "MOBITRAIL",
     location: "Mumbai, India",
     date: "Sept 2017 – July 2021.",
-    icon: <FaBriefcase />,
+    icon: <Briefcase />,
     description: [
       "Reduced app crashes by 30% through code optimization and modular architecture.",
       "Collaborated with QA, UX, and PM teams to enhance performance and ensure multi-device compatibility.",
@@ -214,7 +229,7 @@ export const educationData = [
     company: "University of Mumbai",
     location: "Mumbai, India",
     date: "2014 – 2017",
-    icon: <FaGraduationCap />,
+    icon: <GraduationCap />,
     description:
       "Studied core CS subjects, completed Android internships, and participated in app hackathons.",
   },
@@ -266,7 +281,7 @@ export const projects = [
     title: "IIFL InvestorQ",
     image: project4,
     description:
-      "Finance-focused Q&A app where users ask and answer investment-related questions; 100k+ downloads on Play Store.",
+      "Finance QnA app where users ask & answer investment-related questions; 100k+ downloads on PlayStore.",
     details: [
       "Designed and developed 20+ modules from scratch; led full-cycle ownership of the app.",
       "Reclaimed the project when stability dropped (60–70% crash-free) and improved to 99–100%.",
@@ -279,15 +294,15 @@ export const projects = [
 // ----------------------------------------------Contact Data---------------------------------------------------
 export const contact = [
   {
-    icon: <FaEnvelope />,
+    icon: <Mail />,
     name: "palaparth28@gmail.com",
   },
   {
-    icon: <FaPhoneAlt />,
+    icon: <Phone />,
     name: "+91-9833422423",
   },
   {
-    icon: <FaMapMarkerAlt />,
+    icon: <MapPin />,
     name: "Mumbai, Maharashtra, India",
   },
 ];
