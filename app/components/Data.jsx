@@ -94,7 +94,7 @@ export const metaContentPages = {
 
 // ----------------------------------------------Header Data---------------------------------------------------
 export const introduction = {
-  image: "/ParthPala.webp",
+  image: "/ParthPala.png",
   name: "Parth Pala",
   designation: "Technology Analyst | Android Specialist",
   location: "Mumbai, India",
@@ -104,15 +104,35 @@ export const introduction = {
 export const socialMediaIcons = [
   {
     name: "phone",
-    link: "tel:+919833422423", // replace with your actual number
-    icon: <Phone />,
+    link: "tel:+919833422423",
+    icon: <Phone className="md:w-6 md:h-6 w-4 h-4"/>,
   },
   {
     name: "linkedin",
     link: "https://www.linkedin.com/in/parth-pala/",
-    icon: <Phone />,
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        className="md:w-6 md:h-6 w-4 h-4"
+      >
+        <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8h4V24h-4V8zM9 8h3.6v2.16h.05c.5-.94 1.73-1.93 3.55-1.93 3.8 0 4.5 2.5 4.5 5.74V24h-4v-7.8c0-1.86-.03-4.24-2.58-4.24-2.58 0-2.98 2.02-2.98 4.1V24h-4V8z" />
+      </svg>
+    ),
   },
-  { name: "github", link: "https://github.com/parthpala", icon: <Phone /> },
+  {
+    name: "github", link: "https://github.com/parthpala", icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        className="md:w-6 md:h-6 w-4 h-4"
+      >
+        <path d="M12 .297C5.37.297 0 5.67 0 12.297c0 5.292 3.438 9.787 8.205 11.387.6.112.82-.258.82-.577v-2.234c-3.338.727-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.09-.744.082-.729.082-.729 1.205.086 1.84 1.238 1.84 1.238 1.07 1.834 2.807 1.304 3.492.997.108-.776.418-1.304.762-1.604-2.665-.304-5.466-1.333-5.466-5.93 0-1.31.467-2.382 1.235-3.22-.123-.303-.535-1.524.118-3.176 0 0 1.008-.322 3.3 1.23a11.5 11.5 0 0 1 3.003-.404c1.02.005 2.047.138 3.003.404 2.29-1.552 3.297-1.23 3.297-1.23.655 1.652.243 2.873.12 3.176.77.838 1.233 1.91 1.233 3.22 0 4.61-2.804 5.624-5.475 5.92.43.372.823 1.103.823 2.222v3.293c0 .322.216.694.825.576C20.565 22.08 24 17.585 24 12.297 24 5.67 18.627.297 12 .297z" />
+      </svg>
+    ),
+  },
 ];
 
 // ----------------------------------------------About Data---------------------------------------------------

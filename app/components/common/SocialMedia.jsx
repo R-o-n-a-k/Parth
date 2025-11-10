@@ -4,7 +4,7 @@ import { socialMediaIcons } from "../Data";
 const SocialMedia = () => {
   return (
     <>
-      <div className="flex flex-row gap-6 md:text-2xl text-xl absolute md:top-24 top-18 right-6 text-muted-foreground">
+      <div className="flex flex-row gap-6 md:text-2xl text-xl absolute md:top-22 top-18 right-6 text-muted-foreground">
         {socialMediaIcons.map((item) => (
           <a
             data-aos="zoom-in"

@@ -1,9 +1,10 @@
 "use client";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import { ToastContainer, toast, Bounce } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 import { SendHorizontal } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Toaster } from "@/components/ui/sonner"
+import { toast } from "sonner"
 
 const ContactMeForm = () => {
   const form = useRef();
@@ -22,11 +23,10 @@ const ContactMeForm = () => {
         })
         .then(
           () => {
-            toast.success("The form was submitted successfully");
+            toast.success("The form was submitted successfully")
           },
           (error) => {
-            console.error("Error:", error.text);
-            toast.error("❌ Failed to send. Please try again.");
+            toast.error("Failed to send. Please try again.");
           }
         );
       e.target.reset();
@@ -34,7 +34,7 @@ const ContactMeForm = () => {
   };
 
   return (
-    <form className="w-full my-8" ref={form} onSubmit={sendEmail}>
+    <form className="w-full my-12" ref={form} onSubmit={sendEmail}>
       <div data-aos="fade-up" data-aos-offset="5" className="relative mb-6">
         <label className="form-label">Name</label>
         <input
@@ -82,24 +82,13 @@ const ContactMeForm = () => {
         data-aos-delay="200"
         className="text-center"
       >
-        <button type="submit" className="btn-normal">
-          Send <SendHorizontal className="animate-send" />
-        </button>
+      <Button type="submit"
+         size="lg" > Send
+         <SendHorizontal className="animate-send" />
+       </Button>
+
       </div>
-      <ToastContainer
-        position="top-center"
-        autoClose={2000}
-        limit={1}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        theme="light"
-        transition={Bounce}
-      />
+        <Toaster />
     </form>
   );
 };

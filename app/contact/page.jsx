@@ -25,7 +25,7 @@ const Contact = () => {
         data-aos="fade-right"
         data-aos-offset="5"
         data-aos-delay="100"
-        className="text-content tracking-wide text-sm leading-normal md:text-base"
+        className="text-muted-foreground tracking-wide text-sm leading-normal md:text-base"
       >
         If you want to build something great and intuitive. Let's connect &
         create magic...
@@ -43,7 +43,7 @@ const Contact = () => {
             <p
               data-aos="fade-left"
               data-aos-offset="5"
-              className="text-content font-medium text-sm md:text-base"
+              className="text-foreground font-medium text-sm md:text-base"
             >
               {item.name}
             </p>

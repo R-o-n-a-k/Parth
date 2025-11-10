@@ -1,7 +1,6 @@
 import Counter from "../components/Counter";
 import { skills, aboutData, metaContentPages } from "../components/Data";
 import Skills from "../components/Skills";
-import SkillsAccordion from "../components/SkillsAccordion";
 import StructuredData from "../components/StructuredData";
 import { Accordion } from "@/components/ui/accordion"
 
