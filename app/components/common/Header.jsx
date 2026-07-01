@@ -29,8 +29,7 @@ const Header = () => {
 
           <div className="p-4 md:p-6 mb-10">
             <div
-              data-aos="fade-right"
-              data-aos-delay="100"
+              data-aos="fade-up"
               className="flex items-center gap-2"
             >
               <h1 className="tracking-wider leading-relaxed mt-1 text-2xl md:text-3xl font-bold text-foreground">
@@ -39,15 +38,15 @@ const Header = () => {
               <ThemeIcon />
             </div>
             <h2
-              data-aos="fade-right"
-              data-aos-delay="200"
+              data-aos="fade-up"
+              data-aos-delay="50"
               className="text-muted-foreground leading-relaxed font-semibold text-base md:text-lg"
             >
               {introduction.designation}
             </h2>
             <p
-              data-aos="fade-right"
-              data-aos-delay="300"
+              data-aos="fade-up"
+              data-aos-delay="100"
               className="italic font-medium text-sm md:text-base text-grey-3 mb-5"
             >
               {introduction.location}

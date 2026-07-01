@@ -12,7 +12,7 @@ export const metadata = {
 const Project = () => {
   return (
     <section className="section">
-      <h2 data-aos="fade-right" data-aos-offset="5" className="section-heading">
+      <h2 data-aos="fade-up" className="section-heading">
         Projects
       </h2>
       <div className="projects grid grid-cols-1 gap-6 justify-center">

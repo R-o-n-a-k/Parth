@@ -19,22 +19,21 @@ const About = () => {
       <section className="section">
         <div className="about-me">
           <h2
-            data-aos="fade-right"
-            data-aos-offset="5"
+            data-aos="fade-up"
             className="section-heading"
           >
             About Me
           </h2>
           <p
             data-aos="fade-up"
-            data-aos-offset="5"
+            data-aos-delay="100"
             className="text-muted-foreground w-full text-justify tracking-wide text-sm leading-normal md:text-base"
           >
             {aboutData.firstPara}
           </p>
           <p
             data-aos="fade-up"
-            data-aos-offset="5"
+            data-aos-delay="150"
             className="text-muted-foreground w-full text-justify tracking-wide text-sm leading-normal md:text-base mt-4"
           >
             {aboutData.secondPara}
@@ -42,8 +41,8 @@ const About = () => {
         </div>
 
         <div
-          data-aos="zoom-in"
-          data-aos-offset="5"
+          data-aos="fade-up"
+          data-aos-delay="200"
           className="flex flex-wrap mt-8 justify-around"
         >
           <Counter end={aboutData.experience} label="Yrs Experience" />
@@ -53,8 +52,8 @@ const About = () => {
 
         <div className="skills mt-8">
           <h2
-            data-aos="fade-right"
-            data-aos-offset="5"
+            data-aos="fade-up"
+            data-aos-delay="250"
             className="section-heading"
           >
             Technical Skills

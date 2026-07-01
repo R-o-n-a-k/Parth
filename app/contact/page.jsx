@@ -14,16 +14,14 @@ const Contact = () => {
     <section className="section">
       <div className="about-me">
         <h2
-          data-aos="fade-right"
-          data-aos-offset="5"
+          data-aos="fade-up"
           className="section-heading"
         >
           Contact Me
         </h2>
       </div>
       <p
-        data-aos="fade-right"
-        data-aos-offset="5"
+        data-aos="fade-up"
         data-aos-delay="100"
         className="text-muted-foreground tracking-wide text-sm leading-normal md:text-base"
       >
@@ -34,15 +32,15 @@ const Contact = () => {
         {contact.map((item) => (
           <div key={item.name} className="flex items-center gap-2">
             <div
-              data-aos="zoom-in"
-              data-aos-offset="5"
+              data-aos="fade-up"
+              data-aos-delay="100"
               className="p-2 bg-primary rounded-full text-white"
             >
               {item.icon}
             </div>
             <p
-              data-aos="fade-left"
-              data-aos-offset="5"
+              data-aos="fade-up"
+              data-aos-delay="100"
               className="text-foreground font-medium text-sm md:text-base"
             >
               {item.name}

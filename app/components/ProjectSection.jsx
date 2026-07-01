@@ -30,7 +30,7 @@ const ProjectSection = () => {
       {projects.map((proj) => (
         <div
           data-aos="fade-up"
-          data-aos-offset="5"
+          data-aos-delay="100"
           key={proj.id}
           className="flex flex-col md:flex-row gap-0.5 border-[1.5px] md:border-2 rounded-md border-grey-2 bg-transparent"
         >

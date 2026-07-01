@@ -3,14 +3,17 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 
-function AnimateOnScroll() {
+export default function AnimateOnScroll() {
   useEffect(() => {
     AOS.init({
-      duration: 700,
+      duration: 600,
       easing: "ease-in-out",
+      once: true,
+      offset: 5,
+      mirror: false,
       anchorPlacement: "top-bottom",
     });
   }, []);
-}
 
-export default AnimateOnScroll;
+  return null;
+}

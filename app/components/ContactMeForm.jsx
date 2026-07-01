@@ -35,7 +35,7 @@ const ContactMeForm = () => {
 
   return (
     <form className="w-full my-12" ref={form} onSubmit={sendEmail}>
-      <div data-aos="fade-up" data-aos-offset="5" className="relative mb-6">
+      <div data-aos="fade-up" data-aos-delay="100" className="relative mb-6">
         <label className="form-label">Name</label>
         <input
           type="text"
@@ -47,7 +47,6 @@ const ContactMeForm = () => {
       </div>
       <div
         data-aos="fade-up"
-        data-aos-offset="5"
         data-aos-delay="100"
         className="relative mb-6"
       >
@@ -62,7 +61,6 @@ const ContactMeForm = () => {
       </div>
       <div
         data-aos="fade-up"
-        data-aos-offset="5"
         data-aos-delay="200"
         className="relative mb-6"
       >
@@ -77,9 +75,7 @@ const ContactMeForm = () => {
         />
       </div>
       <div
-        data-aos="zoom-in"
-        data-aos-offset="5"
-        data-aos-delay="200"
+        data-aos="fade-up"
         className="text-center"
       >
       <Button type="submit"
