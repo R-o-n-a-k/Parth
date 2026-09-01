@@ -46,7 +46,7 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-primary hover:underline text-sm font-medium"
           >
-            View Live <ExternalLink className="text-xs" size={15} />
+            View <ExternalLink className="text-xs" size={15} />
           </a>
         )}
       </div>

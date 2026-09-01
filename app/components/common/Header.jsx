@@ -55,7 +55,7 @@ const Header = () => {
               data-aos-delay="500"
               href={introduction.resume}
               size="lg" asChild>
-              <a href={introduction.resume} download>
+              <a href={introduction.resume} target="_blank" rel="noopener noreferrer">
                 Download CV
                 <ChevronsDown className="animate-bounce font-bold" />
               </a>
